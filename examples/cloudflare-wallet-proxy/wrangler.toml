@@ -1,0 +1,41 @@
+name = "hermes-wallet-proxy"
+account_id = "ce1299263440dd9917ca362dc9f37074"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+WALLET_PROXY_WALLETS = '''
+{
+  "agent0-main": {
+    "provider": "privy",
+    "walletId": "nx2jditxj3yf0vrgz171kewk",
+    "address": "0xd0F745dFbA0C29D6c1765512a8771415D5955B35"
+  },
+  "agent1-main": {
+    "provider": "cdp",
+    "accountName": "radius-cli-1780606413083",
+    "address": "0x1068752c24286dD5Ca1615FE58102CFF62DF7eB0"
+  },
+  "agent2-main": {
+    "provider": "para",
+    "email": "eriksreks@gmail.com",
+    "walletId": "63b1aff7-35f0-4be4-99e5-ffe24729a76a",
+    "address": "0xbb8b1f3af97b77a693d5ed87b25a11f933e21cde"
+  }
+}
+'''
+WALLET_PROXY_ACCESS_AUD = ""
+PRIVY_API_BASE = "https://api.privy.io/v1"
+PARA_ENV = "BETA"
+PARA_OFFLOAD_MPC_COMPUTATION_URL = "https://partner-mpc-computation.beta.usecapsule.com"
+
+# Wallet alias config example:
+#
+# WALLET_PROXY_WALLETS = '''
+# {
+#   "agent0-main": { "provider": "privy", "walletId": "wlt_..." },
+#   "agent1-main": { "provider": "cdp", "accountName": "radius-agent-1", "address": "0x..." },
+#   "agent2-main": { "provider": "para", "email": "agent2@radiustech.xyz", "walletId": "...", "address": "0x..." }
+# }
+# '''
